@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css Grid tutorial</title>
+	<style type="text/css">
+		.continer{
+			background-color: lightgray;
+			width: 650px;
+			height: 700px;
+			margin: 45px auto 0;
+
+			display: grid;
+			grid-template-columns: repeat(2,120px);
+			grid-template-rows: repeat(2,80px);
+			grid-gap: 15px;
+			grid-auto-rows: 50px;
+            /*justify-content: space-evenly;
+			align-content:space-evenly;*/
+			place-content:center center;
+		}
+		.item-1{background-color: yellow;}
+		.item-2{background-color: green;}
+		.item-3{background-color: blue;
+		        grid-row: span 3;}
+		.item-4{background-color: red;}
+		.item-5{background-color: purple;}
+		.item-6{background-color: pink;}
+		.item-7{background-color: green;
+		         grid-column:span 2;}
+		.item-8{background-color: lightblue;}
+	</style>
+</head>
+<body>
+	<div class="continer">
+		<div class="item-1">one</div>
+		<div class="item-2">two</div>
+		<div class="item-3">three</div>
+		<div class="item-4">four</div>
+		<div class="item-5">five</div>
+		<div class="item-6">six</div>
+		<div class="item-7">seven</div>
+		<div class="item-8">eight</div>
+	</div>
+</body>
+</html>
